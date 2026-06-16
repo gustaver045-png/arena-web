@@ -1,0 +1,95 @@
+ <!DOCTYPE html> <!-- Esse é um documento HTML 5 -->
+<html lang="pt-BR"> <!-- A língua principal é português do Brasil -->
+
+<head><!--Aqui fica as configurações da pagina-->
+    <meta charset="UTF-8"><!--A página começa a trabalhar com acentos e caracteres especiais-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--Preparando a página para melhorar a responsividade para os diversos dispositivos que existem-->
+    <title>Arena</title><!--Texto que fica na aba do site-->
+    <link rel="stylesheet" href="./src/CSS/style.css">
+</head>
+
+<body><!--É todo o conteúdo visível da pagina-->
+    <main class="container-principal">
+
+        <section class=" tela tela-apresentacao">
+            <div class="apresentacao-conteudo">
+                <p class="etiqueta-projeto">Projeto HTML, CSS e JavaScript</p>
+
+                <h1 class="titulo-principal">Arena</h1>
+
+                <p class="descricao">Escolha um jogador , conheça seus atributos e entre na arena para travar batalhas épicas contra adversários poderosos. Use ataques, habilidades especiais e estratégias de defesa para provar quem é o verdadeiro campeão</p>
+
+                <button class="botao" id="botao-selecionar" type="button">Iniciar</button>
+            </div>
+
+            <div class="apresentacao-visual">
+                <img src="./src/img/img-personagens.png" alt="" class="imagem-personagens">
+            </div>
+        </section>
+
+        <section class=" tela tela-selecao">
+            <div class="cabecalho">
+               <p class="cta">Selecione um personagem</p>
+
+               <button class="botao" id="botao-selecionar" type="button">
+                Selecionar
+               </button>
+            </div>
+
+            <div class="container-selecao">
+                <div class="carta-personagem Anastacia" id="carta-personagem">
+                    
+                </div>
+
+                <div class="carta-personagem Barthomeu" id="carta-personagem">
+                    
+                </div> 
+
+                <div class="carta-personagem Gustavo " id="carta-personagem">
+                    
+                </div> 
+
+                <div class="carta-personagem Jeff" id="carta-personagem">
+                    
+                </div> 
+
+                <div class="carta-personagem Kael" id="carta-personagem">
+                    
+                </div> 
+
+                <div class="carta-personagem Sharloot" id="carta-personagem">
+                    
+                </div> 
+                
+            </div>
+
+        </section>
+
+        <section class="tela tela-confirmacao ativa">
+            <div class="confirmacao-visual">
+                <img src="./src/img/Kael.charg.png" alt="Personagem selecionado" id="imagem-personagem-confirmado" class="imagem-personagem-confirmado">
+            </div>
+
+            <div class="confirmacao-conteudo">
+                <h2 class="personagem-nome" id="personagem-nome">Kael Arkerman</h2>
+                <p class="personagem-descricao" id="personagem-descricao">Kael Ackerman é um guerreiro de elite frio, inteligente e extremamente habilidoso com o equipamento ODM. Criado ao lado de Eren e Mikasa, ele se destaca por sua coragem e determinação em proteger a humanidade. Seu maior poder é o Titã Canideo, uma transformação única com cabeça semelhante à de um cachorro, velocidade impressionante e força devastadora</p>
+            </div>
+
+            <div class="painel-atributos">
+                <div class="atributo atributos-ataque" id="atributo-ataque">
+                   <span class="atributo-nome">Ataque</span>
+                   <div class="barra-prenchimento">
+                      <div class="barra-ataque" id="barra-ataque"></div>
+                   </div>
+
+                   <span class="atributos-valor" id="atributos-valor"></span>
+                </div>
+
+                <button class="botao" id="botao-confirmar" type="button">Confirmar</button>
+            </div>
+        </section>
+
+    </main>
+</body>
+
+</html>
