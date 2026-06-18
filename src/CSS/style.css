@@ -184,3 +184,40 @@ body{
     background-image: url(../img/Sharloot.png);
 }
 /*TELA DE SELEÇÃO*/
+
+/*TELA DE CONFIRMAÇÃO*/
+
+.tela-confirmacao{
+    width: 100%;
+    max-width: 1400px;
+    min-height: 100vh;
+
+    justify-content:space-between;
+    align-items: center;
+}
+
+.confirmacao-visual{
+    width:45%;
+
+}
+
+.imagem-personagem-confirmada{
+    height: 906px;
+    width: 680%;
+}
+
+.degrade{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, #171717, rgb(0,0,0,0.1), #171717);
+    pointer-events: none;
+}
+
+.confirmacao-conteudo{
+    
+}
+
+/*TELA DE CONFIRMAÇÃO*/

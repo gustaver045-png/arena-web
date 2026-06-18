@@ -11,7 +11,7 @@
 <body><!--É todo o conteúdo visível da pagina-->
     <main class="container-principal">
 
-        <section class=" tela tela-apresentacao">
+        <section class=" tela tela-apresentacao" id="tela-apresentacao">
             <div class="apresentacao-conteudo">
                 <p class="etiqueta-projeto">Projeto HTML, CSS e JavaScript</p>
 
@@ -27,7 +27,7 @@
             </div>
         </section>
 
-        <section class=" tela tela-selecao">
+        <section class=" tela tela-selecao" id="tela-selecao">
             <div class="cabecalho">
                <p class="cta">Selecione um personagem</p>
 
@@ -65,27 +65,69 @@
 
         </section>
 
-        <section class="tela tela-confirmacao ativa">
+        <section class="tela tela-confirmacao ativa" id="tela-confirmacao">
             <div class="confirmacao-visual">
                 <img src="./src/img/Kael.charg.png" alt="Personagem selecionado" id="imagem-personagem-confirmado" class="imagem-personagem-confirmado">
+                <div class="degrade"></div>
             </div>
 
             <div class="confirmacao-conteudo">
-                <h2 class="personagem-nome" id="personagem-nome">Kael Arkerman</h2>
-                <p class="personagem-descricao" id="personagem-descricao">Kael Ackerman é um guerreiro de elite frio, inteligente e extremamente habilidoso com o equipamento ODM. Criado ao lado de Eren e Mikasa, ele se destaca por sua coragem e determinação em proteger a humanidade. Seu maior poder é o Titã Canideo, uma transformação única com cabeça semelhante à de um cachorro, velocidade impressionante e força devastadora</p>
+                <h2 class="nome-personagem-confirmado" id="nome-personagem-confirmado">Kael Arkerman</h2>
+
+                <p class="descricao-personagem-confirmado" id="descricao-personagem-confirmado">Kael Ackerman é um guerreiro de elite frio, inteligente e extremamente habilidoso com o equipamento ODM. Criado ao lado de Eren e Mikasa, ele se destaca por sua coragem e determinação em proteger a humanidade. Seu maior poder é o Titã Canideo, uma transformação única com cabeça semelhante à de um cachorro, velocidade impressionante e força devastadora</p>
             </div>
 
-            <div class="painel-atributos">
-                <div class="atributo atributos-ataque" id="atributo-ataque">
+            <div class="painel-atributos-confirmacao">
+                <div class="atributo linha-ataque">
                    <span class="atributo-nome">Ataque</span>
-                   <div class="barra-prenchimento">
-                      <div class="barra-ataque" id="barra-ataque"></div>
+
+                   <div class="barra-atributo">
+                      <div class="barra-preenchimento ataque" id="barra-ataque"></div>
                    </div>
 
-                   <span class="atributos-valor" id="atributos-valor"></span>
+                   <span class="atributos-valor" id="valor-ataque">120</span>
                 </div>
+            </div>
 
-                <button class="botao" id="botao-confirmar" type="button">Confirmar</button>
+                <div class="painel-atributos-confirmacao">
+                <div class="atributo linha-defesa">
+                   <span class="atributo-nome">Defesa</span>
+
+                   <div class="barra-atributo">
+                    <div class="barra-preenchimento defesa" id="barra-defesa"></div>
+                   </div>
+
+                   <span class="atributos-valor" id="valor-defesa">145</span>
+                </div>
+                
+            <div class="painel-atributos-confirmacao">
+                <div class="atributo linha-velocidade">
+                   <span class="atributo-nome">Velocidade</span>
+
+                   <div class="barra-atributo">
+                    <div class="barra-preenchimento velocidade" id="barra-velocidade"></div>
+                   </div>
+     
+                   <span class="atributos-valor" id="valor-velocidade">100</span>
+                </div>
+            </div>
+
+              <div class="painel-atributos-confirmacao">
+                <div class="atributo linha-especial">
+                   <span class="atributo-nome">Especial</span>
+
+                   <div class="barra-atributo">
+                    <div class="barra-preenchimento especial" id="barra-especial"></div>
+                   </div>
+     
+                   <span class="atributos-valor" id="valor-especial">155</span>
+                </div>
+            </div>
+                <button class="botao" id="botao-confirmar" type="button">
+                    Confirmar
+                </button>
+
+
             </div>
         </section>
 
